@@ -1,4 +1,3 @@
-// This script is for reading the values so we get live updates.
 const fs = require('fs');
 
 module.exports.readValue = (title, callback) => {
@@ -16,5 +15,4 @@ module.exports.readValues = () => {
             resolve(data);
         });
     })
-
 }
