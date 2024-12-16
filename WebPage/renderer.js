@@ -1,4 +1,3 @@
-//Here is the javascript part of the index.html file.
 const ipcRenderer = require('electron').ipcRenderer;
 let title = document.getElementById('title');
 let status = document.getElementById('status');
