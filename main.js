@@ -87,7 +87,6 @@ sendStatus = (ourprice, theirprice, profit, partner) => {
       profit: profit,
       partner: partner
     });
-  
 }
 
 manager.on('newOffer', (offer) => {
