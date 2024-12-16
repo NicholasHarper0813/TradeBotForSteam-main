@@ -1,7 +1,4 @@
 const weeklyStats = require('../../../modules/data/weeklyStats.json');
-
-
-
 let tradesWeeklyChart = new Chart(document.getElementById("tradesWeeklyChart"), {
     type: 'bar',
     data: {
@@ -23,12 +20,12 @@ let tradesWeeklyChart = new Chart(document.getElementById("tradesWeeklyChart"), 
     }
 });
 
-
+let amountOfGlitchedTrades = 0;
 let amountOfAcceptedTrades = 0;
 let amountOfDeclinedTrades = 0;
-let amountOfGlitchedTrades = 0;
 
-for (let i = 0; i < weeklyStats.length; i++) {
+for (let i = 0; i < weeklyStats.length; i++) 
+{
     amountOfAcceptedTrades = weeklyStats[i].amountOfAcceptedTrades;
     amountOfDeclinedTrades = weeklyStats[i].amountOfDeclinedTrades;
     amountOfGlitchedTrades = weeklyStats[i].amountOfGlitchedTrades;
