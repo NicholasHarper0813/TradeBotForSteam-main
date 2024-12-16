@@ -1,9 +1,8 @@
 const { app, BrowserWindow, Menu, ipcMain } = require('electron');
+const path = require('path');
 const url = require('url');
-const path = require('path'); //Module for path finding inside the project.
 
 module.exports = mainMenuTemplate = [{
-
     label: 'File',
     submenu: [
       {
@@ -22,7 +21,8 @@ module.exports = mainMenuTemplate = [{
     submenu: [
       {
         label: 'Account',
-        click: function () {
+        click: function ()
+        {
           smallwin = new BrowserWindow({ width: 350, height: 450 });
           smallwin.loadURL(url.format({
             pathname: path.join(process.cwd() + '/WebPage/configs/configAccount.html'),
@@ -34,7 +34,8 @@ module.exports = mainMenuTemplate = [{
       },
       {
         label: 'Games',
-        click: function () { //This handles when the label is clicked.
+        click: function () 
+        {
           smallwin = new BrowserWindow({ width: 350, height: 300 });
           smallwin.loadURL(url.format({
             pathname: path.join(process.cwd() + '/WebPage/configs/configGames.html'),
@@ -46,7 +47,8 @@ module.exports = mainMenuTemplate = [{
       },
       {
         label: 'Trashlimit',
-        click: function () {//This handles when the label is clicked.
+        click: function () 
+        {
           smallwin = new BrowserWindow({ width: 350, height: 300 });
           smallwin.loadURL(url.format({
             pathname: path.join(process.cwd() + '/WebPage/configs/configTrash.html'),
@@ -58,7 +60,8 @@ module.exports = mainMenuTemplate = [{
       },
       {
         label: 'OwnerID',
-        click: function () { //This handles when the label is clicked.
+        click: function () 
+        {
           smallwin = new BrowserWindow({ width: 350, height: 300 });
           smallwin.loadURL(url.format({
             pathname: path.join(process.cwd() + '/WebPage/configs/configOwnerID.html'),
@@ -95,7 +98,6 @@ module.exports = mainMenuTemplate = [{
         label: 'Connection'
       }
     ]
-  
   },
   {
     label: 'Stats',
@@ -113,7 +115,6 @@ module.exports = mainMenuTemplate = [{
         },
       }
     ]
-  
   }
   
   ];
