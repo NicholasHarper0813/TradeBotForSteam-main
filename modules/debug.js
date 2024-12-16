@@ -1,6 +1,6 @@
 const fs = require('fs');
-const time = require('node-get-time');
 const util = require('util');
+const time = require('node-get-time');
 
 let log_file = fs.createWriteStream(__dirname + '/debug.log', { flags: 'w' });
 
