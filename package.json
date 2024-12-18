@@ -1,14 +1,16 @@
 {
   "name": "steamtradebot",
   "version": "1.2.4",
-  "description": "Steambot Developed by Olle Thunberg: cloudianbusiness@gmail.com",
+  "description": "Steambot Developed by Olle Thunberg: nicholasharper000@gmail.com",
   "main": "main.js",
-  "scripts": {
+  "scripts":
+  {
     "start": "electron ."
   },
-  "repository": {
+  "repository": 
+  {
     "type": "git",
-    "url": "git+https://github.com/Gameman2110/SteamTradeBot.git"
+    "url": "git+https://github.com/..."
   },
   "keywords": [
     "steambot",
@@ -25,11 +27,13 @@
   ],
   "author": "Olle Thunberg (CloudiaN)",
   "license": "ISC",
-  "bugs": {
+  "bugs": 
+  {
     "url": "https://github.com/Gameman2110/SteamTradeBot/issues"
   },
   "homepage": "https://github.com/Gameman2110/SteamTradeBot#readme",
-  "dependencies": {
+  "dependencies":
+  {
     "colors": "^1.1.2",
     "electron": "^1.6.2",
     "fs": "0.0.1-security",
