@@ -1,5 +1,5 @@
 {
-  "name": "steamtradebot",
+  "name": "TradeBotForSteam",
   "version": "1.2.4",
   "description": "Steambot Developed by Olle Thunberg: nicholasharper000@gmail.com",
   "main": "main.js",
@@ -10,7 +10,7 @@
   "repository": 
   {
     "type": "git",
-    "url": "git+https://github.com/..."
+    "url": "git+https://github.com/NicholasHarper0813/TradeBotForSteam-main"
   },
   "keywords": [
     "steambot",
@@ -29,9 +29,9 @@
   "license": "ISC",
   "bugs": 
   {
-    "url": "https://github.com/Gameman2110/SteamTradeBot/issues"
+    "url": "https://github.com/NicholasHarper0813/TradeBotForSteam-main/issues"
   },
-  "homepage": "https://github.com/Gameman2110/SteamTradeBot#readme",
+  "homepage": "https://github.com/NicholasHarper0813/TradeBotForSteam-main#readme",
   "dependencies":
   {
     "colors": "^1.1.2",
