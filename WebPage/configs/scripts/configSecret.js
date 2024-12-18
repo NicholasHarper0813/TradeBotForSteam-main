@@ -1,8 +1,8 @@
 const config = require('../../../config.json');
 const configjs = require('../../../modules/config');
+const label = document.getElementById('label');
 const electron = require('electron');
 const shell = electron.shell;
-const label = document.getElementById('label');
 const sSecret = document.getElementById('sSecret');
 const iSecret = document.getElementById('iSecret');
 sSecret.value = config.sharedSecret;
