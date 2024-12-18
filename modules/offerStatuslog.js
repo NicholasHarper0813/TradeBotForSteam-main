@@ -7,5 +7,4 @@ module.exports = (status, profit) => {
     {
         console.log('Declined the offer.'.red);
     }
-
 }
