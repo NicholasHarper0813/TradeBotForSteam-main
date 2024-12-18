@@ -3,7 +3,6 @@ let array = require('../config.json');
 
 module.exports.confighandler = function confighandler (label, data) 
 {
-    //console.log('Changing the config file...');
     console.log(label + ' changed to: ' + data);
     array[label] = data;
     let json = JSON.stringify(array);
