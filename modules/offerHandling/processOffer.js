@@ -50,16 +50,17 @@ module.exports = async (offer, community) => {
 
         if (allitems.length > 0) 
         {
-          market.getItemsPrice(gameid, allitems, function (data) {
+          market.getItemsPrice(gameid, allitems, function (data) 
+          {
             console.log('\n');
             console.log('================= New Trade ===================='.green);
             for (let i in allitems)
-              {
+            {
               if (data[i] !== undefined)
               {
                 let inputData = data[i].lowest_price;
-                let tostring = inputData.toString();
                 let currentData = tostring.slice(1, 5);
+                let tostring = inputData.toString();
                 let parseData = parseFloat(currentData);
                 if (parseData < trash) 
                 {
