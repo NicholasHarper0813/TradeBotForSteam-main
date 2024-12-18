@@ -1,30 +1,29 @@
 const config = require('./config.json');
 const configjs = require('./modules/config.js');
-const SteamTotp = require('steam-totp');
-const SteamUser = require('steam-user');
 const SteamCommunity = require('steamcommunity');
 const TradeOfferManager = require('steam-tradeoffer-manager');
-const market = require('./modules/steam-market-pricing');
-const debug = require('./modules/debug.js');
-const electron = require('electron');
-const remote = require('electron').remote;
+const SteamTotp = require('steam-totp');
+const SteamUser = require('steam-user');
+const underscore = require('underscore');
 const path = require('path');
 const url = require('url');
 const fs = require('fs');
-const colors = require('colors');
-const underscore = require('underscore');
 const readline = require('readline');
+const colors = require('colors');
+const electron = require('electron');
+const remote = require('electron').remote;
+const market = require('./modules/steam-market-pricing');
+const debug = require('./modules/debug.js');
 const readValue = require('./modules/readvalue.js');
 const offerStatusLog = require('./modules/offerStatuslog.js');
 const mainMenuTemplateModule = require('./modules/templates/template');
 const processOffer = require('./modules/offerHandling/processOffer')
 const { app, BrowserWindow, Menu, ipcMain } = electron;
 
-let win;
-let trash = config.trashlimit;
-let gameid = config.game;
 let ownerID = config.ownerID;
-let partner, theirprice, ourprice, ourItems, theirItems,ourValue,theirValue, allitems, allourItems;
+let gameid = config.game;
+let trash = config.trashlimit;
+let win, partner, theirprice, ourprice, ourItems, theirItems,ourValue,theirValue, allitems, allourItems;
 
 const client = new SteamUser();
 const community = new SteamCommunity();
@@ -35,7 +34,7 @@ const manager = new TradeOfferManager({
 });
 
 console.log('This bot was developed by CloudiaN'.cyan);
-console.log('Verision 1.2.4'.cyan);
+console.log('Verision 1.2.5'.cyan);
 console.log('Open sourcecode'.cyan);
 console.log('Loading config file...'.green);
 console.log('\n');
@@ -69,7 +68,8 @@ app.on('ready', function ()
 
 app.on('window-all-closed', function () 
 {
-  if (process.platform !== 'darwin') {
+  if (process.platform !== 'darwin') 
+  {
     app.quit();
   }
 });
