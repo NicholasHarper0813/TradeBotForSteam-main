@@ -1,6 +1,5 @@
 const config = require('../../../config.json');
 const configjs = require('../../../modules/config');
-
 const id = document.getElementById('id');
 id.value = config.ownerID;
 
