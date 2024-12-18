@@ -1,8 +1,7 @@
 const config = require('../../../config.json');
 const configjs = require('../../../modules/config');
-
-const label = document.getElementById('label');
 const trashlimit = document.getElementById('trashlimit');
+const label = document.getElementById('label');
 
 trashlimit.value = config.trashlimit;
 let btn = document.getElementById('btn');
