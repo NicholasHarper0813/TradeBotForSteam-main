@@ -1,35 +1,36 @@
-
-body {
+body 
+{
     background-color: white;
 }
-.center {
+.center 
+{
     text-align: center;
-
 }
-.centerdiv {
+.centerdiv 
+{
     margin: 2% auto;
 }
-
-footer p {
+footer p 
+{
     margin: 5%;
     position: absolute;
     bottom: 0;
-
 }
-content {
-
-}
-#totalprofit {
+#totalprofit 
+{
     right: 0;
     margin-right: 9%;
 }
-textarea {
+textarea 
+{
     width: 100px;
 }
-.card {
+.card 
+{
     width: 50%;
     margin: 2% auto;
 }
-.margintop {
+.margintop 
+{
     margin-top: 10%;
 }
