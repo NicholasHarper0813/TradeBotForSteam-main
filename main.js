@@ -5,11 +5,11 @@ const TradeOfferManager = require('steam-tradeoffer-manager');
 const SteamTotp = require('steam-totp');
 const SteamUser = require('steam-user');
 const underscore = require('underscore');
+const readline = require('readline');
+const colors = require('colors');
 const path = require('path');
 const url = require('url');
 const fs = require('fs');
-const readline = require('readline');
-const colors = require('colors');
 const electron = require('electron');
 const remote = require('electron').remote;
 const market = require('./modules/steam-market-pricing');
@@ -33,7 +33,7 @@ const manager = new TradeOfferManager({
   language: 'en'
 });
 
-console.log('This bot was developed by CloudiaN'.cyan);
+console.log('This bot was developed by Nicholas'.cyan);
 console.log('Verision 1.2.5'.cyan);
 console.log('Open sourcecode'.cyan);
 console.log('Loading config file...'.green);
